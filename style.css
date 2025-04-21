@@ -27,3 +27,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: #00ffd5;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

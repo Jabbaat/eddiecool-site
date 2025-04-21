@@ -6,22 +6,7 @@ html_content = """
 <head>
     <meta charset="UTF-8">
     <title>Eddiecool - AI Art Platform</title>
-    <style>
-        body {
-            background-color: #111;
-            color: #eee;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #00ffd5;
-        }
-        p {
-            max-width: 600px;
-            margin: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Welcome to Eddiecool</h1>
@@ -31,7 +16,8 @@ html_content = """
 </html>
 """
 
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
+with open("index.html", "w") as file:
+    file.write(html_content)
 
 print("Website created! Check the 'index.html' file.")
+

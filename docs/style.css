@@ -121,5 +121,15 @@ video {
   margin: 20px auto;
   border-radius: 8px;
 }
+h1 {
+  color: #4CAF50;
+  font-size: 2em;
+}
+
+nav a {
+  font-size: 1.1em;
+  padding: 10px;
+  color: #fff;
+}
 
 

@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #fff;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
   text-align: center;
+  padding: 50px;
+  margin: 0;
 }
 
 nav {
   background-color: #111;
-  padding: 20px 0;
-  margin-bottom: 30px;
+  padding: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 5px rgba(0, 255, 213, 0.2);
 }
 
 nav a {
@@ -22,18 +25,20 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff4081;
+  color: #8e44ad;
 }
 
 h1 {
-  font-size: 3rem;
+  color: #00ffd5;
+  font-size: 2.8em;
   margin-bottom: 20px;
 }
 
 p {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto 20px;
+  font-size: 1.2em;
   line-height: 1.6;
-  font-size: 1.2rem;
 }
+
 

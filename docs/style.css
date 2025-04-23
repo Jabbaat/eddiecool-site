@@ -116,5 +116,10 @@ nav a {
 nav a:hover {
   background-color: #007bff; /* Helderblauw hover-effect */
 }
+video {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
 
 

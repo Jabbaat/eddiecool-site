@@ -36,3 +36,20 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+nav {
+  background-color: #222;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #00ffd5;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  color: #fff;
+  border-bottom: 2px solid #00ffd5;
+}

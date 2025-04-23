@@ -132,10 +132,12 @@ nav a {
   color: #fff;
 }
 .gallery img {
-  width: 200px; /* Pas dit aan naar de gewenste grootte */
-  height: auto; /* Zorgt ervoor dat de verhoudingen behouden blijven */
-  margin: 10px; /* Wat ruimte tussen de afbeeldingen */
-  border-radius: 8px; /* Optioneel: maakt de hoeken van de afbeeldingen wat ronder */
+  max-width: 100%; /* Zorgt ervoor dat de afbeelding niet groter wordt dan de breedte van de container */
+  width: 300px; /* Stel de gewenste breedte in, pas deze aan voor kleinere afbeeldingen */
+  height: auto; /* Zorg ervoor dat de hoogte zich automatisch aanpast */
+  margin: 10px; /* Ruimte tussen de afbeeldingen */
+  border-radius: 8px; /* Optioneel: maakt de hoeken ronder */
 }
+
 
 

@@ -208,24 +208,25 @@ nav .hamburger {
 
 @media (max-width: 768px) {
   nav .menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
+      display: none;
+      flex-direction: column;
+      width: 100%;
   }
 
   nav .menu li {
-    text-align: center;
-    margin: 10px 0;
+      text-align: center;
+      margin: 10px 0;
   }
 
   nav .hamburger {
-    display: block;
+      display: block;
   }
 
   nav .menu.active {
-    display: flex;
+      display: flex;
   }
 }
+
 
 
 

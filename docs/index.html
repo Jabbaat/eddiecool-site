@@ -8,15 +8,10 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="ai_gallery.html">AI Gallery</a>
-    
-        <!-- Voeg de hamburger toe -->
-        <span class="hamburger">&#9776;</span>
-    
-        <!-- Menu items die worden getoggled -->
+        <div class="logo">
+            <a href="index.html">Eddiecool</a>
+        </div>
+        <span class="hamburger" id="hamburger-menu">&#9776;</span>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -24,12 +19,20 @@
             <li><a href="ai_gallery.html">AI Gallery</a></li>
         </ul>
     </nav>
-    
+   
       
 
     <h1>Welcome to Eddiecool</h1>
     <p>A platform for self-made AI music, videos and images.</p>
     <p>Take a look at the intro video!</p>
+
+    <script>
+        document.getElementById("hamburger-menu").addEventListener("click", function() {
+            var menu = document.querySelector(".menu");
+            menu.classList.toggle("active");
+        });
+    </script>
+    
 </body>
 </html>
 <div class="button-container">

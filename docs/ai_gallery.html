@@ -12,18 +12,17 @@
 <body>
     <nav>
         <div class="logo">
-          <a href="index.html">Eddiecool</a>
+            <a href="index.html">Eddiecool</a>
         </div>
+        <span class="hamburger" id="hamburger-menu">&#9776;</span>
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="ai_gallery.html">AI Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="ai_gallery.html">AI Gallery</a></li>
         </ul>
-        <div class="hamburger" onclick="toggleMenu()">
-          ☰
-        </div>
-      </nav>
+    </nav>
+    
       
 
     <h1>AI Gallery</h1>
@@ -58,6 +57,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   
+<script>
+    document.getElementById("hamburger-menu").addEventListener("click", function() {
+        var menu = document.querySelector(".menu");
+        menu.classList.toggle("active");
+    });
+</script>
     
 </body>
 

@@ -138,6 +138,26 @@ nav a {
   margin: 10px; /* Ruimte tussen de afbeeldingen */
   border-radius: 8px; /* Optioneel: maakt de hoeken ronder */
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.thumbnail {
+  width: 150px;
+  height: auto;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 
 
 

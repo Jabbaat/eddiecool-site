@@ -8,11 +8,24 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a> |
+        <a href="index.html" class="logo">Home</a> |
         <a href="about.html">About</a> |
         <a href="contact.html">Contact</a> |
-        <a href="ai_gallery.html">AI Gallery</a> <!-- Nieuwe tabblad -->
+        <a href="ai_gallery.html">AI Gallery</a>
+    
+        <!-- Voeg de hamburger toe -->
+        <span class="hamburger">&#9776;</span>
+    
+        <!-- Menu items die worden getoggled -->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="ai_gallery.html">AI Gallery</a></li>
+        </ul>
     </nav>
+    
+      
 
     <h1>Welcome to Eddiecool</h1>
     <p>A platform for self-made AI music, videos and images.</p>
@@ -27,5 +40,15 @@
     <source src="video/eddiecool_intro.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  
+  <script>
+    // Vind de hamburger button en de menu
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    // Voeg een event listener toe om het menu te toggelen wanneer de hamburger wordt geklikt
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
+ 
   

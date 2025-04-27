@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* Algemene body instellingen */
 body {
   background-color: #09168e;
   color: #f0f0f0;
@@ -8,20 +9,22 @@ body {
   padding: 50px;
   margin: 0;
 }
+
+/* Logo instellingen */
 .logo-img {
-  height: 80px;      /* Standaard grootte op desktop */
-  width: auto;       /* Breedte schaalt automatisch mee */
-  max-width: 200px;  /* Maximaal 200px breed om uitrekken te voorkomen */
+  width: 120px; /* Standaard logo grootte */
+  height: auto;
+  max-width: 200px; /* Maximaal 200px breed om uitrekken te voorkomen */
+  transition: width 0.3s ease;
 }
 
-/* Op kleinere schermen (bijvoorbeeld mobiel) */
 @media (max-width: 768px) {
+  /* Op kleinere schermen wordt het logo kleiner */
   .logo-img {
-    height: 60px;    /* Iets kleiner op mobiele schermen */
+    width: 100px; /* Logo kleiner op mobiel */
     max-width: 150px;
   }
 }
-
 
 /* Navigatiebalk */
 nav {
@@ -29,7 +32,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #4e0433; /* Jouw originele achtergrondkleur */
+  background-color: #4e0433; /* Achtergrondkleur voor navigatie */
   box-shadow: 0 2px 5px rgba(0, 255, 213, 0.2); /* Mooie schaduw */
 }
 
@@ -37,11 +40,6 @@ nav .logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-
-.logo-img {
-  width: 120px; /* GROTER logo */
-  height: auto;
 }
 
 /* Menu styling */
@@ -104,6 +102,7 @@ nav .hamburger {
     display: block;
   }
 }
+
 /* Fade-in effect voor mobiel menu */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
@@ -114,6 +113,8 @@ nav .menu.active {
   display: flex;
   animation: fadeIn 0.4s ease forwards;
 }
+
+/* Thumbnails met hover-effect */
 .thumbnail {
   width: 150px;
   height: auto;
@@ -123,40 +124,16 @@ nav .menu.active {
 }
 
 .thumbnail:hover {
-  transform: scale(1.05);
-}
-.video-container {
-  width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  margin: 20px 0;
+  transform: scale(1.05); /* Vergroot de afbeelding bij hover */
 }
 
-.video-container video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-.video-container {
-  max-width: 800px; /* of 100%, afhankelijk wat jij wilt */
-  margin: 20px auto;
-  padding: 10px;
-}
-
-.video-container video {
-  width: 100%;
-  height: auto;
-  border-radius: 12px; /* afgeronde hoekjes voor extra coolness */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtiele schaduw */
-}
+/* Video container styling */
 .video-container {
   position: relative;
   width: 100%;
   max-width: 800px;
   margin: 2rem auto;
-  padding-top: 56.25%; /* 16:9 verhouding */
+  padding-top: 56.25%; /* 16:9 video verhouding */
 }
 
 .video-container video {
@@ -169,8 +146,6 @@ nav .menu.active {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-
-
 
 
 

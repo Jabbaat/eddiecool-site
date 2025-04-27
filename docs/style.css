@@ -114,6 +114,43 @@ nav .menu.active {
   display: flex;
   animation: fadeIn 0.4s ease forwards;
 }
+.thumbnail {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+.video-container {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.video-container {
+  max-width: 800px; /* of 100%, afhankelijk wat jij wilt */
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* afgeronde hoekjes voor extra coolness */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtiele schaduw */
+}
 
 
 

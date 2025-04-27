@@ -2,59 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Eddiecool - AI Art Platform</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Home - Eddiecool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+
+<nav>
     <div class="logo">
         <a href="index.html">
-          <img src="images/logo.png" alt="Eddiecool Logo" class="logo-img">
+            <img src="images/logo.png" alt="Eddiecool Logo" class="logo-img">
         </a>
-      </div>
-     
-        <span class="hamburger" id="hamburger-menu">&#9776;</span>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="ai_gallery.html">AI Gallery</a></li>
-        </ul>
-    </nav>
-   
-      
-
-    <h1>Welcome to Eddiecool</h1>
-    <p>A platform for self-made AI music, videos and images.</p>
-    <p>Take a look at the intro video!</p>
-
-    <script>
-        document.getElementById("hamburger-menu").addEventListener("click", function() {
-            var menu = document.querySelector(".menu");
-            menu.classList.toggle("active");
-        });
-    </script>
+    </div>
     
-</body>
-</html>
-<div class="button-container">
-    <button onclick="window.location.href='about.html'">Learn More</button>
-    <button onclick="window.location.href='contact.html'">Contact Us</button>
-</div>
-<video controls width="600">
-    <source src="video/eddiecool_intro.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <script>
-    // Vind de hamburger button en de menu
-    const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('.menu');
+    <span class="hamburger" id="hamburger-menu">&#9776;</span>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="ai_gallery.html">Gallery</a></li>
+    </ul>
+</nav>
 
-    // Voeg een event listener toe om het menu te toggelen wanneer de hamburger wordt geklikt
-    hamburger.addEventListener('click', () => {
-        menu.classList.toggle('active');
+<h1>Welcome to Eddiecool's Home Page!</h1>
+
+<script>
+    document.getElementById("hamburger-menu").addEventListener("click", function() {
+        var menu = document.querySelector(".menu");
+        menu.classList.toggle("active");
     });
 </script>
+
+</body>
+</html>
  
   

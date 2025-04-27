@@ -151,6 +151,24 @@ nav .menu.active {
   border-radius: 12px; /* afgeronde hoekjes voor extra coolness */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtiele schaduw */
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding-top: 56.25%; /* 16:9 verhouding */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
 
 
 

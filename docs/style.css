@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* Algemene body instellingen */
+/* Algemene body-instellingen */
 body {
   background-color: #09168e;
   color: #f0f0f0;
@@ -109,11 +109,10 @@ nav .hamburger {
 }
 
 nav .menu.active {
-  display: flex;
   animation: fadeIn 0.4s ease forwards;
 }
 
-/* Thumbnails met hover-effect */
+/* Thumbnails */
 .thumbnail {
   width: 150px;
   height: auto;
@@ -126,7 +125,7 @@ nav .menu.active {
   transform: scale(1.05);
 }
 
-/* VIDEO-container styling */
+/* Video-container styling */
 .video-wrapper {
   display: flex;
   justify-content: center;
@@ -146,7 +145,6 @@ nav .menu.active {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
 
-/* De video zelf */
 .video-container video {
   position: absolute;
   top: 0;
@@ -156,7 +154,7 @@ nav .menu.active {
   object-fit: cover;
 }
 
-/* Play-knop over de video */
+/* Play-knop */
 .play-button {
   position: absolute;
   top: 50%;
@@ -171,11 +169,28 @@ nav .menu.active {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
   z-index: 10;
+  animation: pulse 1.5s infinite;
 }
 
 .play-button:hover {
   background-color: rgba(0, 0, 0, 0.7);
   transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Pulse animatie voor play-button */
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -184,6 +199,3 @@ nav .menu.active {
     max-width: 400px;
   }
 }
-
-
-

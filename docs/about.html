@@ -29,7 +29,7 @@
 
 <!-- Video werkt nu goed -->
 <div class="video-container">
-    <video src="video/eddiecool_intro.mp4" controls autoplay muted loop></video>
+    <video id="myVideo" src="video/eddiecool_intro.mp4" controls></video>
 </div>
 
 <script>
@@ -38,7 +38,22 @@
         menu.classList.toggle("active");
     });
 </script>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const video = document.getElementById('myVideo');
+    
+      video.addEventListener('play', function() {
+        if (video.requestFullscreen) {
+          video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) { /* Safari */
+          video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { /* IE11 */
+          video.msRequestFullscreen();
+        }
+      });
+    });
+    </script>
+    
 </body>
 </html>
 

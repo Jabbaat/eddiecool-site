@@ -146,6 +146,12 @@ nav .menu.active {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 768px) {
+  .video-container {
+    padding-top: 177.78%; /* 9:16 verhouding (portretmodus) */
+    max-width: 400px;
+  }
+}
 
 
 

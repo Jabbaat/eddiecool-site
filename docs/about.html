@@ -51,13 +51,16 @@
       playButton.style.display = 'none';
       video.play();
 
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if (video.webkitRequestFullscreen) {
-        video.webkitRequestFullscreen();
-      } else if (video.msRequestFullscreen) {
-        video.msRequestFullscreen();
-      }
+      const container = document.querySelector('.video-container');
+
+if (container.requestFullscreen) {
+  container.requestFullscreen();
+} else if (container.webkitRequestFullscreen) {
+  container.webkitRequestFullscreen();
+} else if (container.msRequestFullscreen) {
+  container.msRequestFullscreen();
+}
+
     });
 
     // Als de video pauzeert, toon de play-button weer

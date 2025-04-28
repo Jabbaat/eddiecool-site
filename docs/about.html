@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About - Eddiecool</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>About - Eddiecool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-    <div class="logo">
-        <a href="index.html">
-            <img src="images/logo.png" alt="Eddiecool Logo" class="logo-img">
-        </a>
-    </div>
-    
-    <span class="hamburger" id="hamburger-menu">&#9776;</span>
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="ai_gallery.html">Gallery</a></li>
-    </ul>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Eddiecool Logo" class="logo-img">
+    </a>
+  </div>
+  
+  <span class="hamburger" id="hamburger-menu">&#9776;</span>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="ai_gallery.html">Gallery</a></li>
+  </ul>
 </nav>
 
 <h1>About Eddiecool</h1>
 <p>Watch the cool Eddiecool video:</p>
 
 <div class="video-wrapper">
-    <div class="video-container">
-        <video id="eddiecool-video" src="video/eddiecool_intro.mp4" poster="images/video-thumbnail.jpg" playsinline></video>
-        <div class="play-button" id="play-button">&#9658;</div>
-    </div>
+  <div class="video-container">
+    <video id="eddiecool-video" poster="images/video-thumbnail.jpg" playsinline preload="metadata">
+      <source src="video/eddiecool_intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button class="play-button" id="play-button">&#9658;</button>
+  </div>
 </div>
 
 <script>
   document.getElementById("hamburger-menu").addEventListener("click", function() {
-      var menu = document.querySelector(".menu");
-      menu.classList.toggle("active");
+    var menu = document.querySelector(".menu");
+    menu.classList.toggle("active");
   });
 
-  // Play button functionaliteit
   document.addEventListener('DOMContentLoaded', function() {
-      const video = document.getElementById('eddiecool-video');
-      const playButton = document.getElementById('play-button');
+    const video = document.getElementById('eddiecool-video');
+    const playButton = document.getElementById('play-button');
 
-      playButton.addEventListener('click', function() {
-          playButton.style.display = 'none';
-          video.play();
+    playButton.addEventListener('click', function() {
+      playButton.style.display = 'none';
+      video.play();
 
-          if (video.requestFullscreen) {
-              video.requestFullscreen();
-          } else if (video.webkitRequestFullscreen) {
-              video.webkitRequestFullscreen();
-          } else if (video.msRequestFullscreen) {
-              video.msRequestFullscreen();
-          }
-      });
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
+    });
   });
 </script>
-
 
 </body>
 </html>

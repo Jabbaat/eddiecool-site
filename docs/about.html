@@ -27,39 +27,43 @@
 <h1>About Eddiecool</h1>
 <p>Watch the cool Eddiecool video:</p>
 
-<!-- Video werkt nu goed -->
 <div class="video-wrapper">
     <div class="video-container">
-        <video id="eddiecool-video" src="video/eddiecool_intro.mp4" poster="images/video-thumbnail.jpg"></video>
+        <video id="eddiecool-video" src="video/eddiecool_intro.mp4" poster="images/video-thumbnail.jpg" playsinline></video>
         <div class="play-button" id="play-button">&#9658;</div>
     </div>
 </div>
-
 
 <script>
     document.getElementById("hamburger-menu").addEventListener("click", function() {
         var menu = document.querySelector(".menu");
         menu.classList.toggle("active");
     });
-</script>
-<script>
+
+    // Play button functionaliteit
     document.addEventListener('DOMContentLoaded', function() {
-      const video = document.getElementById('myVideo');
-    
-      video.addEventListener('play', function() {
-        if (video.requestFullscreen) {
-          video.requestFullscreen();
-        } else if (video.webkitRequestFullscreen) { /* Safari */
-          video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) { /* IE11 */
-          video.msRequestFullscreen();
-        }
-      });
+        const video = document.getElementById('eddiecool-video');
+        const playButton = document.getElementById('play-button');
+
+        playButton.addEventListener('click', function() {
+            playButton.style.display = 'none';
+            video.play();
+
+            // Volledig scherm aanvragen
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) { /* Safari */
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { /* IE11 */
+                video.msRequestFullscreen();
+            }
+        });
     });
-    </script>
-    
+</script>
+
 </body>
 </html>
+
 
 
 

@@ -50,17 +50,6 @@
     playButton.addEventListener('click', function() {
       playButton.style.display = 'none';
       video.play();
-
-      const container = document.querySelector('.video-container');
-
-if (container.requestFullscreen) {
-  container.requestFullscreen();
-} else if (container.webkitRequestFullscreen) {
-  container.webkitRequestFullscreen();
-} else if (container.msRequestFullscreen) {
-  container.msRequestFullscreen();
-}
-
     });
 
     // Als de video pauzeert, toon de play-button weer

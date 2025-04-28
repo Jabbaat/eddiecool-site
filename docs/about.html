@@ -28,9 +28,13 @@
 <p>Watch the cool Eddiecool video:</p>
 
 <!-- Video werkt nu goed -->
-<div class="video-container">
-    <video id="myVideo" src="video/eddiecool_intro.mp4" controls></video>
+<div class="video-wrapper">
+    <div class="video-container">
+        <video id="eddiecool-video" src="video/eddiecool_intro.mp4" poster="images/video-thumbnail.jpg"></video>
+        <div class="play-button" id="play-button">&#9658;</div>
+    </div>
 </div>
+
 
 <script>
     document.getElementById("hamburger-menu").addEventListener("click", function() {

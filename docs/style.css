@@ -18,6 +18,7 @@ body {
   transition: width 0.3s ease;
 }
 
+/* Logo kleiner op mobiel */
 @media (max-width: 768px) {
   .logo-img {
     width: 100px;
@@ -41,7 +42,7 @@ nav .logo a {
   text-decoration: none;
 }
 
-/* Menu styling */
+/* Navigatie menu */
 nav .menu {
   list-style: none;
   display: flex;
@@ -59,8 +60,8 @@ nav .menu a {
   font-size: 18px;
   font-weight: bold;
   padding: 8px 12px;
-  transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav .menu a:hover {
@@ -76,6 +77,7 @@ nav .hamburger {
   color: #00ffd5;
 }
 
+/* Hamburger actief maken op mobiel */
 @media (max-width: 768px) {
   nav {
     flex-wrap: wrap;
@@ -90,6 +92,7 @@ nav .hamburger {
 
   nav .menu.active {
     display: flex;
+    animation: fadeIn 0.4s ease forwards;
   }
 
   nav .menu li {
@@ -102,30 +105,13 @@ nav .hamburger {
   }
 }
 
-/* Fade-in effect voor mobiel menu */
+/* Fade-in animatie mobiel menu */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-nav .menu.active {
-  animation: fadeIn 0.4s ease forwards;
-}
-
-/* Thumbnails */
-.thumbnail {
-  width: 150px;
-  height: auto;
-  margin: 10px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.thumbnail:hover {
-  transform: scale(1.05);
-}
-
-/* Video-container styling */
+/* Video-wrapper */
 .video-wrapper {
   display: flex;
   justify-content: center;
@@ -133,11 +119,12 @@ nav .menu.active {
   margin: 3rem auto;
 }
 
+/* Video-container (voor portrait video) */
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  padding-top: 56.25%; /* 16:9 verhouding */
+  max-width: 400px; /* Portrait is smaller */
+  padding-top: 177.78%; /* 9:16 verhouding (portrait) */
   border-radius: 16px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.5);
@@ -145,6 +132,7 @@ nav .menu.active {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
 
+/* Video styling */
 .video-container video {
   position: absolute;
   top: 0;
@@ -193,9 +181,16 @@ nav .menu.active {
   }
 }
 
-@media (max-width: 768px) {
-  .video-container {
-    padding-top: 177.78%; /* 9:16 verhouding (portret) */
-    max-width: 400px;
-  }
+/* Thumbnail standaard styling (optioneel voor gallery) */
+.thumbnail {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+

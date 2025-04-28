@@ -12,16 +12,15 @@ body {
 
 /* Logo instellingen */
 .logo-img {
-  width: 120px; /* Standaard logo grootte */
+  width: 120px;
   height: auto;
-  max-width: 200px; /* Maximaal 200px breed om uitrekken te voorkomen */
+  max-width: 200px;
   transition: width 0.3s ease;
 }
 
 @media (max-width: 768px) {
-  /* Op kleinere schermen wordt het logo kleiner */
   .logo-img {
-    width: 100px; /* Logo kleiner op mobiel */
+    width: 100px;
     max-width: 150px;
   }
 }
@@ -32,8 +31,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #4e0433; /* Achtergrondkleur voor navigatie */
-  box-shadow: 0 2px 5px rgba(0, 255, 213, 0.2); /* Mooie schaduw */
+  background-color: #4e0433;
+  box-shadow: 0 2px 5px rgba(0, 255, 213, 0.2);
 }
 
 nav .logo a {
@@ -55,7 +54,7 @@ nav .menu li {
 }
 
 nav .menu a {
-  color: #00ffd5; /* Jouw turquoise kleur */
+  color: #00ffd5;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -65,7 +64,7 @@ nav .menu a {
 }
 
 nav .menu a:hover {
-  background-color: #8e44ad; /* Hover kleur */
+  background-color: #8e44ad;
   color: white;
 }
 
@@ -124,7 +123,7 @@ nav .menu.active {
 }
 
 .thumbnail:hover {
-  transform: scale(1.05); /* Vergroot de afbeelding bij hover */
+  transform: scale(1.05);
 }
 
 /* Video container styling */
@@ -134,66 +133,19 @@ nav .menu.active {
   max-width: 800px;
   margin: 2rem auto;
   padding-top: 56.25%; /* 16:9 video verhouding */
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  animation: pulseGlow 4s infinite alternate ease-in-out;
 }
 
+/* Video zelf */
 .video-container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-@media (max-width: 768px) {
-  .video-container {
-    padding-top: 177.78%; /* 9:16 verhouding (portretmodus) */
-    max-width: 400px;
-  }
-}
-/* Play-knop over de video */
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 50%;
-  padding: 20px 25px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  z-index: 10;
-}
-
-.play-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  transform: translate(-50%, -50%) scale(1.1);
-}
-/* Play-knop over de video */
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 50%;
-  padding: 20px 25px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  z-index: 10;
-}
-
-.play-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-
-
+  object

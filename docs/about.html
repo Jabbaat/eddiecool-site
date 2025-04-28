@@ -35,31 +35,31 @@
 </div>
 
 <script>
-    document.getElementById("hamburger-menu").addEventListener("click", function() {
-        var menu = document.querySelector(".menu");
-        menu.classList.toggle("active");
-    });
+  document.getElementById("hamburger-menu").addEventListener("click", function() {
+      var menu = document.querySelector(".menu");
+      menu.classList.toggle("active");
+  });
 
-    // Play button functionaliteit
-    document.addEventListener('DOMContentLoaded', function() {
-        const video = document.getElementById('eddiecool-video');
-        const playButton = document.getElementById('play-button');
+  // Play button functionaliteit
+  document.addEventListener('DOMContentLoaded', function() {
+      const video = document.getElementById('eddiecool-video');
+      const playButton = document.getElementById('play-button');
 
-        playButton.addEventListener('click', function() {
-            playButton.style.display = 'none';
-            video.play();
+      playButton.addEventListener('click', function() {
+          playButton.style.display = 'none';
+          video.play();
 
-            // Volledig scherm aanvragen
-            if (video.requestFullscreen) {
-                video.requestFullscreen();
-            } else if (video.webkitRequestFullscreen) { /* Safari */
-                video.webkitRequestFullscreen();
-            } else if (video.msRequestFullscreen) { /* IE11 */
-                video.msRequestFullscreen();
-            }
-        });
-    });
+          if (video.requestFullscreen) {
+              video.requestFullscreen();
+          } else if (video.webkitRequestFullscreen) {
+              video.webkitRequestFullscreen();
+          } else if (video.msRequestFullscreen) {
+              video.msRequestFullscreen();
+          }
+      });
+  });
 </script>
+
 
 </body>
 </html>

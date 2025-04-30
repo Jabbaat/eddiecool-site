@@ -217,4 +217,10 @@ nav .hamburger {
   justify-content: center;
   background: rgba(0, 0, 0, 0.9);
 }
+.logo-animation {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
 

@@ -139,7 +139,7 @@ nav .hamburger {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Was: cover */
 }
 
 /* Portrait modus op mobiel */
@@ -261,5 +261,21 @@ button {
 
 button:hover {
   background-color: #00c2a8;
+}
+@media (min-width: 769px) {
+  form {
+    max-width: 800px; /* breder op desktop */
+    padding: 40px;    /* wat meer ruimte rondom */
+  }
+
+  input, textarea {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 14px 28px;
+  }
 }
 

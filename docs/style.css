@@ -278,4 +278,54 @@ button:hover {
     padding: 14px 28px;
   }
 }
+h1 {
+  font-size: 30px;
+  color: #e9f1f0;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(0, 255, 213, 0.5);
+  margin-bottom: 20px;
+ }
+
+h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 18px;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+.intro-tekst {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #00ffd5; /* aqua neon vibe */
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 255, 213, 0.2);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro-tekst strong {
+  font-size: 26px;
+  color: #ffffff;
+}
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-tekst {
+  animation: fadeInSmooth 1.2s ease-in-out both;
+}
 

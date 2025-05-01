@@ -62,7 +62,7 @@ nav .menu a {
   padding: 8px 12px;
   border-radius: 5px;
   transition: color 0.3s ease, background-color 0.3s ease;
-}
+  }
 
 nav .menu a:hover {
   background-color: #8e44ad;

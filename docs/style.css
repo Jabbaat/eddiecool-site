@@ -151,10 +151,8 @@ nav .hamburger {
 /* Portrait modus op mobiel */
 @media (max-width: 768px) {
   .video-container {
-    max-width: 320px;      /* smaller kader */
-    padding-top: 150%;     /* iets minder hoogte */
-  }
-}
+    max-width: 360px;
+    padding-top: 149%; /* 9:16 verhouding */
   }
 }
 

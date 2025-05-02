@@ -152,7 +152,7 @@ nav .hamburger {
 @media (max-width: 768px) {
   .video-container {
     max-width: 340px;
-    padding-top: 125%; /* 9:16 verhouding */
+    padding-top: 115%; /* 9:16 verhouding */
   }
 }
 

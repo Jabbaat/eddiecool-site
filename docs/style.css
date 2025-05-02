@@ -2,12 +2,14 @@
 
 /* Algemene body-instellingen */
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   background-color: #09168e;
   color: #f0f0f0;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 50px;
-  margin: 0;
+  padding-top: 50px; /* alleen top-padding laten staan */
 }
 
 /* Logo instellingen */
@@ -111,26 +113,30 @@ nav .hamburger {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Video-wrapper */
+/* Video-wrapper zonder padding of blauwe randjes */
 .video-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem auto;
+  margin: 2rem auto;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Video-container standaard (desktop: 16:9) */
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  padding-top: 40.25%; /* 16:9 verhouding */
+  max-width: 600px; /* verlaag van 800px naar 700px of 650px */
+  padding-top: 46.25%;
   border-radius: 16px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.5);
   border: 3px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
+
 
 /* Video styling */
 .video-container video {
@@ -327,5 +333,8 @@ p {
 
 .intro-tekst {
   animation: fadeInSmooth 1.2s ease-in-out both;
+}
+* {
+  box-sizing: border-box;
 }
 
